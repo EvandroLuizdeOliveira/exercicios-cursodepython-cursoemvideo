@@ -1,7 +1,8 @@
 """
 Programa que gera 5 numeros aleatórios de e coloca em uma tupla. Depois mostra a lista de numeros gerados, o maior número e o menor
 -------------------------------------
-
+1 resolução
+-----------
 from random import randint
 nu = (randint(0, 10), randint(0, 10), randint(0, 10), randint(0, 10), randint(0, 10))
 nu_ordem_crescente = sorted(nu)

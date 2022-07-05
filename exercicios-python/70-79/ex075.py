@@ -1,3 +1,6 @@
+"""
+O programa lê 4 valores digitados pelo usuário e os armazena em uma tupla. Depois mostra para o usuário quantas vezes o número 9 apareceu, em que posição foi digitado o número 3 também avisando caso ele não tenha sido digitado e quais foram os números pares.
+"""
 num1 = int(input('Digite um número: '))
 num2 = int(input('Digite outro número: '))
 num3 = int(input('Digite mais um número: '))

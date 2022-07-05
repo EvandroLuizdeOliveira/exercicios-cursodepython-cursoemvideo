@@ -1,3 +1,6 @@
+"""
+O programa pede uma tupla com várias palavras sem acentos. Mostrando para o usuário cada palavra e quais são as vogais dela
+"""
 marcas = ('Mitsubishi', 'Toyota', 'Honda', 'Mazda', 'Lexus', 'Datsun', 'Nissan')
 vowels = ('aeiou')
 for p in marcas:
