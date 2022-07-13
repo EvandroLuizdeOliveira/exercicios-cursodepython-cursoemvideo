@@ -1,5 +1,5 @@
 """
-Exercício pede que o usuário consiga difitar vários números e cadastre-os em uma lista. Caso o número já exista na lista ele não é adicionado novamente. No final o programa deve mostrar todos os valores únicos digitados em ordem crescente.
+Exercício pede que o usuário consiga digitar vários números e cadastre-os em uma lista. Caso o número já exista na lista ele não é adicionado novamente. No final o programa deve mostrar todos os valores únicos digitados em ordem crescente.
 """
 valores = []
 while True:
