@@ -3,12 +3,12 @@ Um programa que lê vários números e coloca em uma lista. Depois disso o progr
 """
 lista = []
 while True:
-    numero = lista.append(int(input('\033[mDigite um valor: \033[30m')))
-    continuar = str(input('\033[mQuer continuar? [S/N] \033[30m')).upper().strip()[0]
+    numero = lista.append(int(input('Digite um valor: ')))
+    continuar = str(input('Quer continuar? [S/N] ')).upper().strip()[0]
     if continuar == 'N':
         break
 lista.sort(reverse=True)
-print(f'\033[m{"-=-" * 20}'
+print(f'{"-=-" * 20}'
       f'\nVocê digitou {len(lista)} elementos'
       f'\nOs valores em ordem decrescente são {lista}')
 if 5 in lista:
