@@ -1,5 +1,4 @@
 from datetime import date
-formularios = list()
 pessoas = dict()
 pessoas['nome'] = str(input('Nome: '))
 ano = int(input('Ano de nascimento: '))
