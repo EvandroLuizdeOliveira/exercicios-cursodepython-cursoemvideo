@@ -10,17 +10,25 @@ while True:
     aproveitamento['total'] = sum(gols)
     jogadores.append(aproveitamento.copy())
     gols.clear()
-    continuar = str(input('Quer continuar? [S/N]')).strip()[0]
-    if continuar not in "SsNn":
-        continuar = str(input('Quer continuar? [S/N] '))
-    if continuar in "Nn":
+    while True:
+        continuar = str(input('Quer continuar? [S/N]')).strip()[0]
+        if continuar in "SN":
+            break
+        print('ERRO! Responda apenas S ou N')
+    if continuar == "N":
         break
     print(f'{"-"  * 40}')
 print(f'{"=-=" * 30}'
-    f'\n{"cod":>3} {"nome":<14} {"gols":<14} {"total":<6}'
-    f'\n{"-" * 40}')
-for k in range (len(jogadores)):
-    print(f'{k:>3} {jogadores[k]["jogador"]:<14} {jogadores[k]["gols"]}{" " * (14-((len(jogadores[k]["gols"]))+((len(jogadores[k]["gols"])-1)*2)+2))} {jogadores[k]["total"]}')
+    f'\ncod ', end='')
+for i in aproveitamento.keys():
+    print(f'{i:<15}', end='')
+print()
+print(f'\n{"-" * 40}')
+for k, v in enumerate(jogadores):
+    print(f'{k:>3}', end='')
+    for d in v.values():
+        print(f'{str(d):<15}', end='')
+    print()
 print(f'{"-" * 40}')
 while True:
     escolha = int(input('Mostrar dados de qual jogador? '))
