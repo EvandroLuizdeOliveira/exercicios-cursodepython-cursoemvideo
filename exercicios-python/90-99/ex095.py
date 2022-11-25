@@ -11,7 +11,7 @@ while True:
     jogadores.append(aproveitamento.copy())
     gols.clear()
     while True:
-        continuar = str(input('Quer continuar? [S/N]')).strip()[0]
+        continuar = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
         if continuar in "SN":
             break
         print('ERRO! Responda apenas S ou N')
@@ -23,15 +23,15 @@ print(f'{"=-=" * 30}'
 for i in aproveitamento.keys():
     print(f'{i:<15}', end='')
 print()
-print(f'\n{"-" * 40}')
+print(f'{"-" * 40}')
 for k, v in enumerate(jogadores):
-    print(f'{k:>3}', end='')
+    print(f'{k:>3} ', end='')
     for d in v.values():
         print(f'{str(d):<15}', end='')
     print()
 print(f'{"-" * 40}')
 while True:
-    escolha = int(input('Mostrar dados de qual jogador? '))
+    escolha = int(input('Mostrar dados de qual jogador? (999 para parar) '))
     if escolha == 999:
         break
     elif escolha >= len(jogadores) or escolha < 0:
