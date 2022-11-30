@@ -4,5 +4,6 @@ def escreva(txt):
           f'\n{"~" * (len(txt)+4)}')
 
 
+# Programa Principal
 texto = str(input('Escreva uma mensagem: ')).strip()
 escreva(texto)
